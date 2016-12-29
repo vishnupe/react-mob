@@ -1,4 +1,5 @@
 import React from 'react';
+import CircleImage from './CircleImage/CircleImage'
 class SampleComponent extends React.Component {
   constructor(){
     super();
@@ -7,7 +8,10 @@ class SampleComponent extends React.Component {
   render() {
     return (
       <div>
-        <h1>{'S A M P L E'} {this.props.name}</h1>
+        <CircleImage border
+          src={'https://www.gravatar.com/avatar/8ba86ec43790f7c15bc8e053e0d4f2ea?s=328&d=identicon&r=PG'}
+          width={50}
+        />
       </div>
     );
   }

@@ -2,7 +2,9 @@ $(document).ready(function() {
   var distX = 0 , distY = 0;
   var viewportX,viewportY;
   $(document).on('mousedown touchstart', '.touch-y', function(e) {
+    console.log($(this))
     var $ele = $(this);
+    console.log(viewport)
     viewportY = (-1 * $ele.height()) + viewport($ele).height();
     var startY = e.pageY || e.originalEvent.touches[0].pageY;
     var currentY = parseFloat($ele.css('transform').split(',')[5]);
